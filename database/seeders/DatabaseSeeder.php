@@ -21,8 +21,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             tbl_parent_seeder::class,
-            tbl_course_seeeder::class
-
+            tbl_course_seeeder::class,
+            tbl_student::class,
+            tbl_student_opted_course::class
         ]);
     }
 }

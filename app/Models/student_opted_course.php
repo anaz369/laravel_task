@@ -10,5 +10,7 @@ class student_opted_course extends Model
     use HasFactory;
 
      protected $guarded=[];
+     protected $table='tbl_student_opted_course';
+
 
 }

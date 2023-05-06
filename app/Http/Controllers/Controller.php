@@ -13,10 +13,14 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
-    public function index(){
 
-       $students= student::with('parentName','courseOpted')->get();
-        return view('index')->with('students',$students);
+    public $student;
+
+    public function __construct(studentRepositoryinterface $student ){
+         $this->student=$student;
+    }
+    public function index(){
+       return $this->student->getstudentsDetaails();
 
     }
         public function updateStatus(Request $request)

@@ -18,7 +18,7 @@
                     <th scope="col">Name of Student </th>
                     <th scope="col">Parent Name</th>
                     <th scope="col">Opted Courses</th>
-                    <th scope="col">is_Active</th>
+                    <th scope="col">Enable or Disable</th>
                 </tr>
             </thead>
             <tbody>
@@ -75,9 +75,9 @@
                         if(data.success) {
 
                             if(data.status==1){
-                        swal("Done","Activated");
+                        swal("Done","Enabled");
                     }else{
-                        swal("Done","inactivated");
+                        swal("Done","Disabled");
                     }
                         }
                     },
