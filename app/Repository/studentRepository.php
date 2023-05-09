@@ -7,6 +7,7 @@ class studentRepository implements studentRepositoryinterface{
         $students= student::with('parentName','courseOpted')->get();
         return view('index')->with('students',$students);
     }
+
 }
 
 ?>

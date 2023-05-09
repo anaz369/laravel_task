@@ -15,7 +15,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Name of Student </th>
+                    <th scope="col">Name of Student</th>
                     <th scope="col">Parent Name</th>
                     <th scope="col">Opted Courses</th>
                     <th scope="col">Enable or Disable</th>

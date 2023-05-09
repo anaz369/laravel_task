@@ -18,5 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\Controller@index')->name('home');
 Route::post('/update', 'App\Http\Controllers\Controller@updateStatus')->name('update.status');
+Route::post('/login','App\Http\Controllers\Controller@login')->name('login.user');
 
 
